@@ -3,6 +3,26 @@ def intersection(arrays):
     YOUR CODE HERE
     """
     # Your code here
+    cache = {}
+
+    total = len(arrays)
+    result = []
+
+    i = 0
+    for array in arrays:
+        for item in array:
+            if item not in cache:
+                if i == 0:
+                    cache[item] = 1
+                else:
+                    continue
+            else:
+                cache[item] += 1
+        i += 1
+    
+    for pair in cache:
+        if cache[pair] == total:
+            result.append(pair)
 
     return result
 
