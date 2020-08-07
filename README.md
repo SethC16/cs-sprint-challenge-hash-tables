@@ -23,11 +23,25 @@ Commit your code regularly and meaningfully. This practice helps both you (in ca
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your answers beforehand.
 
 1. Hashing functions
+*** A hash function is a function where the input is any data, and the output is a number ***
+*** A hash function must be consistent (deterministic) ***
+*** Different input data should return different numbers ***
+*** A hash function must return numbers that are within a specific range ***
 2. Collision resolution
+*** Collision resolution in data structure are the techniques used for handling collision in hashing.  Separate chaining is a collision resolution technique that handles collision by creating a linked list to the bucket of hash tables for which collision occurs ***
 3. Performance of basic hash table operations
+*** it can search, insert, and delete all in constant time O(1) ***
+*** the reason is that we have the deterministic hashing function that tells us exactly which list index holds the data ***
 4. Load factor
+*** is the number of keys stored in the hash table divided by the capacity.  The size should be chosen so that the load factor is less then 1. ***
 5. Automatic resizing
+*** rule of thumb is to resize your hash table when your load factor is greater than 0.7 ***
+*** it is common to double the size of the hash table ***
+*** resizing an array, you need to re-insert all of the items into this new hash table ***
 6. Various use cases for hash tables
+*** searching for elements within a large data set ***
+*** find duplicate elements in a data set ***
+*** Quickly store and retrieve elements from a large data set ***
 
 We expect you to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
